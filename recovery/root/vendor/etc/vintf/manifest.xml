@@ -1,8 +1,5 @@
 <!--
     Input:
-        vendor.transsion.hardware.hyperion.hap_device.xml
-        manifest_tranlog.xml
-        manifest_tranlogconfig.xml
         manifest_sensor_hidl_v2.xml
         manifest_audio.xml
         manifest_dsds.xml
@@ -556,36 +553,6 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.0::INxpNfcLegacy/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.transsion.hardware.hyperion.hap</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IHap</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IHap/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.transsion.hardware.tranlog</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ITranLog</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ITranLog/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.transsion.hardware.tranlogconfig</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ITranLogConfig</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ITranLogConfig/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.trustonic.tee</name>
