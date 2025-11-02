@@ -164,3 +164,67 @@ ALLOW_MISSING_DEPENDENCIES := true
 # Haptic
 TW_SUPPORT_INPUT_AIDL_HAPTICS := true
 TW_SUPPORT_INPUT_AIDL_HAPTICS_FQNAME := "IVibrator/default"
+
+#########################
+#### OrangeFox common ###
+#########################
+FOX_USE_SPECIFIC_MAGISK_ZIP=~/Magisk/Magisk-v28.1.zip
+FOX_VIRTUAL_AB_DEVICE=1
+FOX_VANILLA_BUILD=1
+FOX_ENABLE_APP_MANAGER=1
+FOX_RECOVERY_SYSTEM_PARTITION="/dev/block/mapper/system"
+FOX_RECOVERY_VENDOR_PARTITION="/dev/block/mapper/vendor"
+FOX_USE_BASH_SHELL=1
+FOX_ASH_IS_BASH=1
+FOX_USE_TAR_BINARY=1
+FOX_USE_LZ4_BINARY=1
+FOX_USE_SED_BINARY=1
+FOX_USE_XZ_UTILS=1
+FOX_USE_ZSTD_BINARY=1
+FOX_USE_NANO_EDITOR=1
+FOX_DELETE_AROMAFM=1
+OF_DEFAULT_KEYMASTER_VERSION=4.1
+
+# screen settings
+OF_SCREEN_H=1920
+OF_STATUS_H=95
+OF_STATUS_INDENT_LEFT=48
+OF_STATUS_INDENT_RIGHT=48
+OF_ALLOW_DISABLE_NAVBAR=0
+OF_CLOCK_POS=1
+
+# other stuff
+OF_QUICK_BACKUP_LIST="/boot:/data"
+OF_ENABLE_LPTOOLS=1
+OF_NO_TREBLE_COMPATIBILITY_CHECK=1
+FOX_USE_BASH_SHELL=1
+FOX_USE_NANO_EDITOR=1
+
+# number of list options before scrollbar creation
+OF_OPTIONS_LIST_NUM=9
+
+# ----- data format stuff -----
+# ensure that /sdcard is bind-unmounted before f2fs data repair or format
+OF_UNBIND_SDCARD_F2FS=1
+
+# automatically wipe /metadata after data format
+OF_WIPE_METADATA_AFTER_DATAFORMAT=1
+
+# avoid MTP issues after data format
+OF_BIND_MOUNT_SDCARD_ON_FORMAT=1
+
+# don't spam the console with loop errors
+OF_LOOP_DEVICE_ERRORS_TO_LOG=1
+
+# lz4 compression
+OF_USE_LZ4_COMPRESSION=1
+
+# build all the partition tools
+OF_ENABLE_ALL_PARTITION_TOOLS=1
+
+# variant
+OF_MAINTAINER="Guzram"
+
+# no flashlight
+OF_FLASHLIGHT_ENABLE=0
+#########################
