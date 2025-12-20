@@ -6,7 +6,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter iPlay60_mini_Pro iPlay50_mini_Pro ADVAN_TAB_V8 iPlay60_Pro iPlay_70_Pro,$(TARGET_DEVICE)),)
+ifneq ($(filter iPlay60_mini_Pro iPlay50_mini_Pro ADVAN_TAB_V8 iPlay60_Pro iPlay_70_Pro iPlay50_Pro,$(TARGET_DEVICE)),)
 
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
